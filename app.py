@@ -5,7 +5,7 @@ import os
 
 # Load API key from .env file
 load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # Load the CV
 def load_cv():
